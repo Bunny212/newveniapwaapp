@@ -23,6 +23,7 @@
   },
   "scripts": {
     "build": "export NODE_OPTIONS=--openssl-legacy-provider && yarn venia run build",
+   "vercel-build": "npm run build", 
     "build:dev": "export NODE_OPTIONS=--openssl-legacy-provider && yarn venia run build:dev",
     "clean:all": "yarn workspaces run -s clean && rimraf ./node_modules",
     "clean:dist": "yarn workspaces run clean",
